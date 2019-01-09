@@ -1,30 +1,13 @@
-q1Check = bool(False)
-q1Answer = str("")
-q1 = str("""1. What is the technique called by which the genome of an organism can be
-split up into different sized molecules?
-    a. Electrolysis
-    b. Electrophrosis
-    c. Chromatography
-    d. None of the above\n""")
+from quizFC_data import *
+from quizFC_functions import *
 
-print("""This is a one question science quiz. There will be four possible answers,
-and only one of them is correct. When selecting answers, enter the letter that
-precedes it.\n""")
-
-while q1Check == False:
-        try:
-                q1Answer = str(input(q1))
-                q1Answer = q1Answer.lower()
-                if q1Answer == "b":
-                        print("Got your answer choice!")
-                        q1Check = True
-                else:
-                        if "`" < q1Answer < "e":
-                                print("Got your answer choice!")
-                                q1Check = True
-                        else:
-                                print("""Please enter a letter that is between the
-letters A and D.\n""")
-        except ValueError:
-                print("""Please enter a letter. Select your answer choice by putting in
-the letter that precedes your answer choice.""")
+run_quest(q0, q0Ans, q0CorAns, check)
+run_quest(q1, q1Ans, q1CorAns, check)
+run_quest(q2, q2Ans, q2CorAns, check)
+run_quest(q3, q3Ans, q3CorAns, check)
+run_quest(q4, q4Ans, q4CorAns, check)
+run_quest(q5, q5Ans, q5CorAns, check)
+run_quest(q6, q6Ans, q6CorAns, check)
+run_quest(q7, q7Ans, q7CorAns, check)
+run_quest(q8, q8Ans, q8CorAns, check)
+run_quest(q9, q9Ans, q9CorAns, check)
