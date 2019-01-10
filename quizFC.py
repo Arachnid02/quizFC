@@ -11,3 +11,5 @@ run_quest(q6, q6Ans, q6CorAns, check)
 run_quest(q7, q7Ans, q7CorAns, check)
 run_quest(q8, q8Ans, q8CorAns, check)
 run_quest(q9, q9Ans, q9CorAns, check)
+
+cal_score(grade)
