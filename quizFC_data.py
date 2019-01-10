@@ -1,3 +1,4 @@
+#initialize variables q0-q9 with questions
 q0 = str("""1. What are the two parts of the U.S. Congress?
     a. Senate, House of Representatives
     b. FBI, CIA
@@ -59,6 +60,8 @@ q9 = str("""\n10. Which is the state that borders Mexico?
     c. Mississippi
     d. Arizona
 Your answer: """)
+#initialize q0CorAns-q9CorAns with the correct answers for the associated
+#questions
 q0CorAns = str("a")
 q1CorAns = str("d")
 q2CorAns = str("d")
@@ -69,9 +72,12 @@ q6CorAns = str("c")
 q7CorAns = str("a")
 q8CorAns = str("d")
 q9CorAns = str("d")
+#declares SCORE a global variable, meaning it can be accessed and have it's
+#value changed within every module
 global SCORE
 SCORE = int()
 grade = int ()
+#initialize q0Ans-Q9Ans to hold the user's answer to each question
 q0Ans = str("")
 q1Ans = str("")
 q2Ans = str("")
@@ -83,4 +89,5 @@ q7Ans = str("")
 q8Ans = str("")
 q9Ans = str("")
 q0Ans = str("")
+#initialize the check variable as False
 check = bool(False)
