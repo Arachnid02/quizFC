@@ -2,6 +2,14 @@
 from quizFC_data import *
 from quizFC_functions import *
 
+print("""This is a 10 question U.S. Government and Civics quiz. There will be
+four possible answers and only one of the will be correct. When selecting
+your answer, enter the letter that precedes your answer choice. The program
+is case insensitive, meaning it doesn't matter if your selections are done
+in upper or lower case.
+
+Try your best and good luck!\n""")
+
 #calls the function run_quest and provides arguments to fulfill the function's
 #parameters
 run_quest(q0, q0Ans, q0CorAns, check)
