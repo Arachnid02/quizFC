@@ -51,3 +51,11 @@ def cal_score(grade):
     grade = SCORE * 10
     #print out the user's grade to them
     print("Your grade is: ", grade)
+    if grade < 70:
+        print("Nice attempt, but you failed the quiz. :(")
+    elif grade == 70:
+        print("Good job! You barely passed the quiz :)")
+    elif 80 < grade < 100:
+        print("Great job!. You passed the quiz :)")
+    else:
+        print("Frantastic! You passed the quiz with flying colors! :)")
