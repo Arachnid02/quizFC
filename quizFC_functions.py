@@ -23,6 +23,7 @@ def run_quest(quest, ansU, ansC, check):
                 print("Got your answer choice!")
                 global SCORE
                 SCORE += 1
+                return ansU
                 check = True
             #if the user input is not the correct answer...
             else:
@@ -31,6 +32,7 @@ def run_quest(quest, ansU, ansC, check):
                 #and set the escape condition for the while loop to True
                 if "`" < ansU < "e":
                     print("Got your answer choice!")
+                    return ansU
                     check = True
                 #if it isn't an acceptable answer, then give appropriate
                 #feedback to the user, and providing instructions on how to
@@ -59,3 +61,38 @@ def cal_score(grade):
         print("Great job!. You passed the quiz :)")
     else:
         print("Frantastic! You passed the quiz with flying colors! :)")
+
+#delcaration of a programmer defined function. Will require a value for the
+        #parameter (showAnsCheck)
+def show_ans(showAnsCheck):
+    while showAnsCheck == False:
+        #stores the user input into the variable showAns as a string, and
+        #convert the string into uppercase
+        showAns = str(input("""\nDo you want to see the correct
+answers? Type Y for Yes, or N for No.\n"""))
+        showAns = showAns.upper()
+        #if the user selected Y, to view the correct answers, print out the
+        #correct answer for each question
+        if showAns == "Y":
+            showAnsCheck = True
+            print("Question 1:\nCorrect Answer:", q0CorAns,
+                  "\n\nQuestion 2:\nCorrect Answer:", q1CorAns,
+                  "\n\nQuestion 3:\nCorrect Answer:", q2CorAns,
+                  "\n\nQuestion 4:\nCorrect Answer:", q3CorAns,
+                  "\n\nQuestion 5:\nCorrect Answer:", q4CorAns,
+                  "\n\nQuestion 6:\nCorrect Answer:", q5CorAns,
+                  "\n\nQuestion 7:\nCorrect Answer:", q6CorAns,
+                  "\n\nQuestion 8:\nCorrect Answer:", q7CorAns,
+                  "\n\nQuestion 9:\nCorrect Answer:", q8CorAns,
+                  "\n\nQuestion 10:\nCorrect Answer:", q9CorAns)
+        #if the user selected N, to skip the option to view the correct answers,
+        #provide feedback that program understands input, and exit
+        elif showAns == "N":
+            print("Okay, the correct answer choices will not be shown.")
+            showAnsCheck = True
+        #if the user didn't enter either Y or N, prompt them for input again,
+        #and provide instructions
+        else:
+            print("""Sorry, that input is invalid. Your input needs to be
+either the letter Y for Yes or N for No.""")
+

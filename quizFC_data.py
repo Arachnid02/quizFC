@@ -78,16 +78,7 @@ global SCORE
 SCORE = int()
 grade = int ()
 #initialize q0Ans-Q9Ans to hold the user's answer to each question
-q0Ans = str("")
-q1Ans = str("")
-q2Ans = str("")
-q3Ans = str("")
-q4Ans = str("")
-q5Ans = str("")
-q6Ans = str("")
-q7Ans = str("")
-q8Ans = str("")
-q9Ans = str("")
-q0Ans = str("")
-#initialize the check variable as False
+ansU = str("")
+#initialize the check variables for run_quest and show_ans as False
 check = bool(False)
+showAnsCheck = bool(False)
